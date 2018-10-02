@@ -1,0 +1,12 @@
+services:
+  my-test:
+    image: nginx:latest
+    configs:
+      - my-config:/config1
+      - my-config2:/config2
+
+configs:
+  my-config:
+    file: ../test2/myconfig1
+  my-config2:
+    file: ./myconfig2
